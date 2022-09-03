@@ -24,6 +24,8 @@ const Home = () => {
         });
     })(url);
 
+    window.scrollTo(0, 0);
+
     // just fetch data
 
     // fetch(url)
@@ -34,7 +36,7 @@ const Home = () => {
     //   });
   }, []);
   return (
-    <>
+    <div className="container">
       <div className="content__top">
         <Categories />
         <Sort />
@@ -51,7 +53,7 @@ const Home = () => {
               />
             ))}
       </div>
-    </>
+    </div>
   );
 };
 
