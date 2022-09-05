@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import pizzaLogo from "../assets/img/pizza-logo.svg";
+import Search from "./Search/Search";
 
 const Header = () => {
   return (
@@ -15,9 +16,10 @@ const Header = () => {
             </div>
           </div>
         </Link>
+        <Search />
         <div className="header__cart">
           <Link to="/cart" className="button button--cart">
-            <span>520 в‚Ѕ</span>
+            <span>9.80 $</span>
             <div className="button__delimiter"></div>
             <svg
               width="18"
@@ -48,7 +50,7 @@ const Header = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span>3</span>
+            <span>4</span>
           </Link>
         </div>
       </div>
