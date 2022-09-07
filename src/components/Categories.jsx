@@ -1,7 +1,6 @@
 import React from "react";
 
 const Categories = ({ categoryId, onClickCategory }) => {
-  console.log(categoryId);
   const kindOfPizza = ["All", "Pepperoni", "Cheese", "Mexicano", "Carbonara"];
 
   return (
